@@ -30,8 +30,8 @@ jobs:
           cat > "$RUNNER_TEMP/gitlab-askpass.sh" <<'ASKPASS'
           #!/bin/sh
           case "$1" in
-            *Username*) printf '%s\\n' "$GITLAB_MIRROR_USERNAME" ;;
-            *Password*) printf '%s\\n' "$GITLAB_MIRROR_TOKEN" ;;
+            *Username*) printf '%s\n' "$GITLAB_MIRROR_USERNAME" ;;
+            *Password*) printf '%s\n' "$GITLAB_MIRROR_TOKEN" ;;
             *) exit 1 ;;
           esac
           ASKPASS
