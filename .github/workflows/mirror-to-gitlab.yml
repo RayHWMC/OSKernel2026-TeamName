@@ -15,8 +15,6 @@ concurrency:
 
 jobs:
   mirror:
-    # Enable only after the GitLab write token has been stored as repository secrets.
-    if: ${{ vars.GITLAB_MIRROR_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Clone GitHub refs
@@ -24,8 +22,8 @@ jobs:
 
       - name: Push refs to GitLab
         env:
-          GITLAB_MIRROR_USERNAME: ${{ secrets.GITLAB_MIRROR_USERNAME }}
-          GITLAB_MIRROR_TOKEN: ${{ secrets.GITLAB_MIRROR_TOKEN }}
+          GITLAB_MIRROR_USERNAME: oauth2
+          GITLAB_MIRROR_TOKEN: ${{ secrets.GITLAB_KERNEL }}
         run: |
           cat > "$RUNNER_TEMP/gitlab-askpass.sh" <<'ASKPASS'
           #!/bin/sh
