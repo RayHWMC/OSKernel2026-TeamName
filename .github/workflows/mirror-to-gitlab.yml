@@ -15,6 +15,7 @@ concurrency:
 
 jobs:
   mirror:
+    if: ${{ vars.GITLAB_MIRROR_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Clone GitHub refs
