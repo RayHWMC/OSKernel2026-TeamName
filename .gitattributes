@@ -1,0 +1,5 @@
+* text=auto eol=lf
+
+# Preserve imported upstream bytes, including original line endings.
+tests/upstream/** -text
+tools/environment/reference/** -text

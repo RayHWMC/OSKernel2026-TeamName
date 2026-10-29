@@ -1,0 +1,942 @@
+{
+  "schema_version": 1,
+  "imported_on": "2026-10-22",
+  "scope": "Selected local Git snapshots; not full test suites or runtime images.",
+  "sources": [
+    {
+      "id": "tests-pre-2025",
+      "repository": "https://github.com/oscomp/testsuits-for-oskernel.git",
+      "ref": "origin/pre-2025",
+      "commit": "8b58dd16d26d30f7c74d48d5832d870d3051b703",
+      "selection": [
+        "README.md",
+        "oscomp_syscalls.md",
+        "basic",
+        "scripts/basic"
+      ],
+      "files": [
+        {
+          "upstream_path": "README.md",
+          "path": "tests/upstream/pre-2025/README.md",
+          "git_mode": "100644",
+          "git_blob": "b67cd105bd4dd84fccc5101517b9a18b5391853f",
+          "bytes": 7713,
+          "sha256": "03aa442dd77756f41d2217631eed13ef97c77dd6fc06ca4938b5507609cbbfae"
+        },
+        {
+          "upstream_path": "basic/README.md",
+          "path": "tests/upstream/pre-2025/basic/README.md",
+          "git_mode": "100644",
+          "git_blob": "92f6043296e41bcfc10fbadc251b72113380d758",
+          "bytes": 489,
+          "sha256": "4b997a5b169150219547b4078d8f6b9564a93745631b66d1a27d2c923df8beca"
+        },
+        {
+          "upstream_path": "basic/check_tests.py",
+          "path": "tests/upstream/pre-2025/basic/check_tests.py",
+          "git_mode": "100644",
+          "git_blob": "79a89c6c386b87ba2c1713ccb1e034e3560b5745",
+          "bytes": 930,
+          "sha256": "eb77e4934202ff32823357b42bb6ccd4712a8ba59a858cb9562b3a936f3237e9"
+        },
+        {
+          "upstream_path": "basic/user/CMakeLists.txt",
+          "path": "tests/upstream/pre-2025/basic/user/CMakeLists.txt",
+          "git_mode": "100644",
+          "git_blob": "ad838eaa0d8501b3e0e6e5ae92f4da6e3465312f",
+          "bytes": 3140,
+          "sha256": "f3995f704c08698e8f62b1807d763799b2f4e223ce114edc4306c61028e72e07"
+        },
+        {
+          "upstream_path": "basic/user/Makefile",
+          "path": "tests/upstream/pre-2025/basic/user/Makefile",
+          "git_mode": "100644",
+          "git_blob": "42dc97ab69fd66144c654f6389b6ac23ed9b043e",
+          "bytes": 1435,
+          "sha256": "c662f6688e946f49f7a72cf6023af42f778c1fb0c944d60b51449bba00ecd3d3"
+        },
+        {
+          "upstream_path": "basic/user/build-oscomp.sh",
+          "path": "tests/upstream/pre-2025/basic/user/build-oscomp.sh",
+          "git_mode": "100644",
+          "git_blob": "b553ab5334a7ea99165d64b53467ceeb66c1eb49",
+          "bytes": 38,
+          "sha256": "8f85643676619a8faf3e836cd14272384cc3b0121c9cbde0faa7dfd963c28fe3"
+        },
+        {
+          "upstream_path": "basic/user/include/stddef.h",
+          "path": "tests/upstream/pre-2025/basic/user/include/stddef.h",
+          "git_mode": "100644",
+          "git_blob": "1697e756f712067c9a3d675916ce27ecf84e55bc",
+          "bytes": 3564,
+          "sha256": "0d19474a9d348b961bcf5645c487211e4e8c99ece0626dd4f5d6475049dbd70c"
+        },
+        {
+          "upstream_path": "basic/user/include/stdio.h",
+          "path": "tests/upstream/pre-2025/basic/user/include/stdio.h",
+          "git_mode": "100644",
+          "git_blob": "1c8c5cdeb9141d45054e932be381e379ff133b09",
+          "bytes": 763,
+          "sha256": "3d5f6f5f645a35f4b9168f029f3a2e72fd1d51df928865594aaf824b52d30a17"
+        },
+        {
+          "upstream_path": "basic/user/include/stdlib.h",
+          "path": "tests/upstream/pre-2025/basic/user/include/stdlib.h",
+          "git_mode": "100644",
+          "git_blob": "7319eb2226e72950a6cddd2869b4150c61dcae74",
+          "bytes": 233,
+          "sha256": "8156b12f3cf00af45ea862adfe4afc2066b0726d4bc03d88f9222afdcd51703e"
+        },
+        {
+          "upstream_path": "basic/user/include/string.h",
+          "path": "tests/upstream/pre-2025/basic/user/include/string.h",
+          "git_mode": "100644",
+          "git_blob": "166fb716a033604aa0d552a7c7f1e4a8654df8d2",
+          "bytes": 430,
+          "sha256": "02331e279f2f863f72d9aa831e431aa6c81777f6efe9e6f833fa218939ab5dac"
+        },
+        {
+          "upstream_path": "basic/user/include/unistd.h",
+          "path": "tests/upstream/pre-2025/basic/user/include/unistd.h",
+          "git_mode": "100644",
+          "git_blob": "57755180b11ae4635552d4fd926cd1e99a8fcb4b",
+          "bytes": 1566,
+          "sha256": "39158626a2b5d6103146cb3c474cb812bfbbabf64eb04ec4540d5810719212df"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/loongarch64/clone.s",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/loongarch64/clone.s",
+          "git_mode": "100644",
+          "git_blob": "a165b365a38e43178b4bbf5d381075aa9ac48197",
+          "bytes": 961,
+          "sha256": "c364a579e98074b6a77837d420ac75d27eb418328593a732a2cc55fc9b1cb6c6"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/loongarch64/crt.S",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/loongarch64/crt.S",
+          "git_mode": "100644",
+          "git_blob": "2bd09872709225516bffef2b6da670e0b2f9e1bd",
+          "bytes": 198,
+          "sha256": "dc871a13c3dbbc4d62a12aad18442fba1550d05eeb8864eab076592bdfe1e9e5"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/loongarch64/syscall_arch.h",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/loongarch64/syscall_arch.h",
+          "git_mode": "100644",
+          "git_blob": "677009703e7e1706dde96b77b8d7638782979a9f",
+          "bytes": 3616,
+          "sha256": "dc2a431c1088b643a878413e6621064a05b66847973ec4ecc9e1d29d1089b383"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/loongarch64/syscall_ids.h.in",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/loongarch64/syscall_ids.h.in",
+          "git_mode": "100644",
+          "git_blob": "664de7aa307f3a092c8964535569033bffd2df57",
+          "bytes": 8778,
+          "sha256": "0de7158a8a5d79e2d0eda9801937e7c5c77695e39f75145d2553294a52d66ab9"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/loongarch64/user.ld",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/loongarch64/user.ld",
+          "git_mode": "100644",
+          "git_blob": "9015924d23a26cf27954a5dc2a1501ed2a4a78ac",
+          "bytes": 300,
+          "sha256": "1e8a482bd531986638718c54367901e8885f321d129bfcb82462477c34a58051"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/riscv/clone.s",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/riscv/clone.s",
+          "git_mode": "100644",
+          "git_blob": "db908248cdcc7a1da7d1fbd3d79d573a9d54991f",
+          "bytes": 550,
+          "sha256": "3015ab21d186e355e4082ff1352a99f3faf6b5b618a31b42c7b5665d51492681"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/riscv/crt.S",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/riscv/crt.S",
+          "git_mode": "100644",
+          "git_blob": "3b566485f64c700eaee4b82eaec984570e3e8d44",
+          "bytes": 79,
+          "sha256": "e96759fc0be808f17b6e4d68447b90360682ed76a8312d2a676543a8e6d9fdba"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/riscv/syscall_arch.h",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/riscv/syscall_arch.h",
+          "git_mode": "100644",
+          "git_blob": "042d7db1d698edd5cf76c00e95988bad50428420",
+          "bytes": 2446,
+          "sha256": "e804b6d2e601536aae68248278a5cf7468fbf819f75b638b40288e5593071e05"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/riscv/syscall_ids.h.in",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/riscv/syscall_ids.h.in",
+          "git_mode": "100644",
+          "git_blob": "b127cfe71f54dded830f1ff2439588c9edffdf9d",
+          "bytes": 7668,
+          "sha256": "1d846004ab1890cd211aedefc0cecff5be73b8e8845582587069acc57ae2beb0"
+        },
+        {
+          "upstream_path": "basic/user/lib/arch/riscv/user.ld",
+          "path": "tests/upstream/pre-2025/basic/user/lib/arch/riscv/user.ld",
+          "git_mode": "100644",
+          "git_blob": "30b5d15f8ed4ee0fe8fc70a0f4c7152cfb3b89ea",
+          "bytes": 294,
+          "sha256": "35b8627d96e0273d88fd4a27755211753cbfcc84fb68ea6dc02a28bd89e480ec"
+        },
+        {
+          "upstream_path": "basic/user/lib/main.c",
+          "path": "tests/upstream/pre-2025/basic/user/lib/main.c",
+          "git_mode": "100644",
+          "git_blob": "2cb5d37b83af5d622a00c06146ff777acc4c0059",
+          "bytes": 156,
+          "sha256": "677ce138bb1c8877405d417b23920e1243cc351201d1a51e6d88acea8e3f6877"
+        },
+        {
+          "upstream_path": "basic/user/lib/stdio.c",
+          "path": "tests/upstream/pre-2025/basic/user/lib/stdio.c",
+          "git_mode": "100644",
+          "git_blob": "3052703cd388623eb5722fbe028f1d980e7ebb58",
+          "bytes": 2467,
+          "sha256": "40e181a3a72894bda1761cefc6d937b8d2299ef1c2087ca8ca1015c9c52d4b3d"
+        },
+        {
+          "upstream_path": "basic/user/lib/stdlib.c",
+          "path": "tests/upstream/pre-2025/basic/user/lib/stdlib.c",
+          "git_mode": "100644",
+          "git_blob": "723813bb387b4a035fcb45a55814f760a90d8184",
+          "bytes": 133,
+          "sha256": "cd7dca31494d514e772ebbe9bb78a08ef5b206a483e68d0c15ed2d715bbc20a4"
+        },
+        {
+          "upstream_path": "basic/user/lib/string.c",
+          "path": "tests/upstream/pre-2025/basic/user/lib/string.c",
+          "git_mode": "100644",
+          "git_blob": "c84404334aebf7d54e12a034c16763fce48831e2",
+          "bytes": 3367,
+          "sha256": "fccf679bbc92239d1d03b6b89dd64a29eb692a61cc46088e69afdcb53ddff226"
+        },
+        {
+          "upstream_path": "basic/user/lib/syscall.c",
+          "path": "tests/upstream/pre-2025/basic/user/lib/syscall.c",
+          "git_mode": "100644",
+          "git_blob": "6afc33ffd633d221e94eb83820d44a317d2bf734",
+          "bytes": 5059,
+          "sha256": "b05880e66b230874a1322486c301c3c40e6a9061e1390cfc4292082115a383ba"
+        },
+        {
+          "upstream_path": "basic/user/lib/syscall.h",
+          "path": "tests/upstream/pre-2025/basic/user/lib/syscall.h",
+          "git_mode": "100644",
+          "git_blob": "16eaaf3e01339c327f9cb459efc44017e083a029",
+          "bytes": 1240,
+          "sha256": "74ae2f19690e3b562b96248dfca966a25591e70e9db2671ba090461ff0aee866"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/brk.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/brk.c",
+          "git_mode": "100644",
+          "git_blob": "6060c4af933a731dc11f214ca68d71393d086d1c",
+          "bytes": 754,
+          "sha256": "4b79c0a8a318ef490e789e826e9e6d6ce1335af73ed10437f380ed5766cd24ec"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/brk_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/brk_test.py",
+          "git_mode": "100644",
+          "git_blob": "22409b660ec8c1e97e5fd8180e86987b4ff8e978",
+          "bytes": 682,
+          "sha256": "4ae2c2dcaae38e12d762ca8be99ac5e3b7d6c9fb820d3fdec4da9e473748f2b5"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/build-single-testcase.sh",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/build-single-testcase.sh",
+          "git_mode": "100644",
+          "git_blob": "e64e359c7861451a9bb2cf56568c6a12ee9ead4b",
+          "bytes": 272,
+          "sha256": "00174fe8a45ef788e8610cef963335d6667062c5884cb7342a4a48b3aeebe394"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/chdir.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/chdir.c",
+          "git_mode": "100644",
+          "git_blob": "600626295a7bad2136865419a9087534d91bf40d",
+          "bytes": 410,
+          "sha256": "20a14253f31b331a0ad93e60de5430934439159af870bf65f0201be22f779209"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/chdir_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/chdir_test.py",
+          "git_mode": "100644",
+          "git_blob": "93b46f9200803deb0afbff5d97905873834d435b",
+          "bytes": 368,
+          "sha256": "412287c732e0b6f5f91760e69ed9aecf24418df87cf3262bc962f19cdbda239d"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/clone.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/clone.c",
+          "git_mode": "100644",
+          "git_blob": "8d6a0e1e11674ccedbf013e8c4314ea6c747c0a4",
+          "bytes": 630,
+          "sha256": "322f3066a791b3e397b88ec012ec3eef2c632ffbee87424397b441513ce25fb6"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/clone_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/clone_test.py",
+          "git_mode": "100644",
+          "git_blob": "055e8595fdec13d2a3940118e529568b8954548a",
+          "bytes": 366,
+          "sha256": "580352b1cc97ef7255f7bb54da0ea819471d0b39133715934de984ba48e5b8b7"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/close.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/close.c",
+          "git_mode": "100644",
+          "git_blob": "5ce08dad888ac8685895d52a0b01ce7aa98eb3a2",
+          "bytes": 633,
+          "sha256": "5f41af89c5fe43e038ef81dba980e6bca49631b34c59867436326c01e3600759"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/close_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/close_test.py",
+          "git_mode": "100644",
+          "git_blob": "c0d5a95b776aea87922d5a429d9653606115e869",
+          "bytes": 252,
+          "sha256": "11b2f2d280574761518153698402306aea68f2a7e83e2e46198969a3b880b104"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/dup.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/dup.c",
+          "git_mode": "100644",
+          "git_blob": "66d3efcb55d02a511a6a271d5640c18a58c3aa10",
+          "bytes": 300,
+          "sha256": "d833917c0e40f360689b076f58721b6a8f92f73d7a1199a7d394437db4e7892d"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/dup2.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/dup2.c",
+          "git_mode": "100644",
+          "git_blob": "b0e029ed90bd6183ffc27600a23148a5601d34b8",
+          "bytes": 363,
+          "sha256": "746c59ba47198f657a8fbfdad8b95bf39384033cd37f2d78acfd64b85c1b18fe"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/dup2_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/dup2_test.py",
+          "git_mode": "100644",
+          "git_blob": "dcb65429e029265d264caeb9e1360af923dd2493",
+          "bytes": 245,
+          "sha256": "c280975ab68bfafe8c0da0b648d476a121975238a1e8a865ba7a8e66569cfbbe"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/dup_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/dup_test.py",
+          "git_mode": "100644",
+          "git_blob": "aa6f3805f1691de76aaaaaceff30dc9e6e6a4c52",
+          "bytes": 341,
+          "sha256": "a42e18aaf3d72ffa90e8fc8d2c2d9d9bdcf4ba9d2f702da10fdab0557b25dff2"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/execve.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/execve.c",
+          "git_mode": "100644",
+          "git_blob": "6f04ca5b08a3801978254c92b804a3a94d2f01ae",
+          "bytes": 452,
+          "sha256": "000c9b116320001ac7e320f74bc77c3b0fc14489385b7db94f0dcb64dd2cb051"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/execve_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/execve_test.py",
+          "git_mode": "100644",
+          "git_blob": "6afeffe3386b71eb5b6f680b396f6b2cbd0675f0",
+          "bytes": 307,
+          "sha256": "2a2d70e5d6865851d60c7d99327851958b3f1644f9b4754b4e3f7e0ad3bfd2c9"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/exit.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/exit.c",
+          "git_mode": "100644",
+          "git_blob": "6d5913279e5fbb7544f5757ee6434d2c9a21f894",
+          "bytes": 524,
+          "sha256": "f2c64596db61fca67a4d7f98179218db4002e54ab4d556fe9f5d3b52c717b7a0"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/exit_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/exit_test.py",
+          "git_mode": "100644",
+          "git_blob": "01634aea71b1fc08013fa69fd4383736f54a6661",
+          "bytes": 240,
+          "sha256": "dbde971214985a77b4e15d9b2bca01df4253ecb02f57804e4e2870d0aa1ac21d"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/fork.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/fork.c",
+          "git_mode": "100644",
+          "git_blob": "27d237ee16fae53e98131dd1d747dcd81543291d",
+          "bytes": 566,
+          "sha256": "b5a12b007897c44d614caaf7574ca3d4b900cefbf13658966e2da27e166953a5"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/fork_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/fork_test.py",
+          "git_mode": "100644",
+          "git_blob": "04b307b716543b93f9977c29689d84449e7820bd",
+          "bytes": 312,
+          "sha256": "acc8c2721e0bca9d99e3333cec911ef4ec61888f7b627269bb63c6d604d44e81"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/fstat.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/fstat.c",
+          "git_mode": "100644",
+          "git_blob": "4c9c598bed4f538d97ed8f7317b6be512a83b8d0",
+          "bytes": 614,
+          "sha256": "6a0d388362eefea39afb16d91292a27fb6ea27c89d137ba99b94a0bbc9abb9c0"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/fstat_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/fstat_test.py",
+          "git_mode": "100644",
+          "git_blob": "84143644a4361303c000a968ded4d502bba6a24f",
+          "bytes": 510,
+          "sha256": "f9203d7864bd33e3f27005c4d2329f34fe45db8925cf89b94d04ed5284b3284d"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/getcwd.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/getcwd.c",
+          "git_mode": "100644",
+          "git_blob": "ac54b95ea54db6629b4c17dea7f352cade0a59b3",
+          "bytes": 478,
+          "sha256": "69d66f5b0a27ee938bd38080b431e6199f6b238b727e876f2d94d461fb11761b"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/getcwd_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/getcwd_test.py",
+          "git_mode": "100644",
+          "git_blob": "e873e96cf6fa2da5393d2875f6822942a65b5dbd",
+          "bytes": 260,
+          "sha256": "1c138d135a2496422198ac7d5f6b81826124f8326693ccb709d26997bd9fd3e5"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/getdents.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/getdents.c",
+          "git_mode": "100644",
+          "git_blob": "c7a3991f96e43ea2485e495ff6271f959e47db0a",
+          "bytes": 704,
+          "sha256": "11b08131b10471f0128435c587b0113d9305226ecf4fff02a81948ba56f0405b"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/getdents_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/getdents_test.py",
+          "git_mode": "100644",
+          "git_blob": "e2b38e46b8770035080a5dc24053115655c0b49f",
+          "bytes": 526,
+          "sha256": "d60a378c92fc2286f1de693a9e984f3dbd30467c393de444b316e1303dba45fd"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/getpid.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/getpid.c",
+          "git_mode": "100644",
+          "git_blob": "861aa7786ec2543f6632b50513d5c483e68961d1",
+          "bytes": 402,
+          "sha256": "ea83a8197e8c284c5761991c5ee0b1d6930ec97d6fcbf315524bb62441fb1f82"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/getpid_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/getpid_test.py",
+          "git_mode": "100644",
+          "git_blob": "5da1bd82013b3f99e803aaef6f79756c01352ba7",
+          "bytes": 357,
+          "sha256": "1f4ff7bbbedcdb8df2a4311acde226a25020b7299baa0881eccc45f49a356753"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/getppid.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/getppid.c",
+          "git_mode": "100644",
+          "git_blob": "a28ae60a7f85532c7e78b40efc2969e8edc286ab",
+          "bytes": 445,
+          "sha256": "8c2a10970a566446f079a3ff236f29837e07924ef3540d9941d1f0cfc120adf9"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/getppid_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/getppid_test.py",
+          "git_mode": "100644",
+          "git_blob": "4867f629621c55cdd375ba52f1c4cc23e02fa517",
+          "bytes": 262,
+          "sha256": "487cf3bc0316a25cc9bf396f00597abab715333a67eb54b3e074eff435cd1be5"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/gettimeofday.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/gettimeofday.c",
+          "git_mode": "100644",
+          "git_blob": "768f981265adf5630149368eb08ba981f7172025",
+          "bytes": 762,
+          "sha256": "378c0e291f57c9d3938bf20e822e7aef007a397aa9d4e1e9acfc19ba19dc94d9"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/gettimeofday_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/gettimeofday_test.py",
+          "git_mode": "100644",
+          "git_blob": "701cefd97fdcdb50e3523d9b7021c0c159d88963",
+          "bytes": 385,
+          "sha256": "975999af2ac91575f8916cacf324c0f4161ad139c0d64b4f56a2308239de9d52"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/ktool.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/ktool.py",
+          "git_mode": "100644",
+          "git_blob": "ff91d4db0c8eaead56625162df02fdbed26ad89c",
+          "bytes": 135603,
+          "sha256": "800794f7d621f44e393400d31b291c2f087d0cabf986dd35ae727eb33729dca5"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/mkdir_.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/mkdir_.c",
+          "git_mode": "100644",
+          "git_blob": "35cfccece97f976889d57566f6acf98acb635063",
+          "bytes": 465,
+          "sha256": "338271fbb147b150f009d7fe60ddba0a03b588e67cc13a488e258d32c3dcc2a7"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/mkdir_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/mkdir_test.py",
+          "git_mode": "100644",
+          "git_blob": "23d7b828314881ed37aedd05d98a9e1c76eb2b1b",
+          "bytes": 294,
+          "sha256": "d6314c47559f0680179ec9430813c3665cb6aef4a4351802a42cf34b87fee1d8"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/mmap.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/mmap.c",
+          "git_mode": "100644",
+          "git_blob": "7bb2245847cfd65415f9d1f0e9966047f330b1fd",
+          "bytes": 885,
+          "sha256": "7b2956d3a3e3b09ae15441874d5347eea691bad7bdef9035ebfa075c47b17813"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/mmap_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/mmap_test.py",
+          "git_mode": "100644",
+          "git_blob": "ff8d75db3d1c0bbd5e3908e0c447d559b69cc231",
+          "bytes": 383,
+          "sha256": "a28175da83c7cec51f5e07b9eacf420bbec8ec4601fd0fb43c461c5d2c369a08"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/mount.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/mount.c",
+          "git_mode": "100644",
+          "git_blob": "8c78bbe822b36cbeaed270cf895de7312ddfc9f5",
+          "bytes": 729,
+          "sha256": "c621b9b6b6a7bbec5022fabc44e8dabceeac4e045104897bfe52286ccfaca275"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/mount_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/mount_test.py",
+          "git_mode": "100644",
+          "git_blob": "6d4ab44702510a64a97ecd4c6cf460388c35f4f6",
+          "bytes": 470,
+          "sha256": "374028e8a8e248876d384e61bcf3dec9b16f83a6b63eb7611378e5acbb5bf84a"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/munmap.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/munmap.c",
+          "git_mode": "100644",
+          "git_blob": "bf6a171c1413d0e24634c30d15d85955dc233dc1",
+          "bytes": 987,
+          "sha256": "dfba4d4c42ea74136bffd328b542e6f2a9bfcacfad9f9b46a259d6617e7cad95"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/munmap_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/munmap_test.py",
+          "git_mode": "100644",
+          "git_blob": "9806475ea288e7e1e55793617b3b701e016300b3",
+          "bytes": 421,
+          "sha256": "f9dcb6085136fb15e40c7f0ef95d0b512a7b10bfeccc9b02d8c1027aa3043510"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/open.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/open.c",
+          "git_mode": "100644",
+          "git_blob": "fc4cbc891c0b3dc7ceb6a83e614084d8775ccbbb",
+          "bytes": 371,
+          "sha256": "2afd0c4d7890c86396e01ed75ea006ed517f06328efed179db300bb141e681d8"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/open_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/open_test.py",
+          "git_mode": "100644",
+          "git_blob": "bbd2462002adff01512e7750a5b8ceceb74719e4",
+          "bytes": 323,
+          "sha256": "393be761d43e551c4422957446e0a0d49ced9b788f7a13b22a66d4f948072e7e"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/openat.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/openat.c",
+          "git_mode": "100644",
+          "git_blob": "7598658e76a79ffbe1150587c0c0f300afacbe69",
+          "bytes": 711,
+          "sha256": "bd7c248770f0b37f77ab08d8e168c0671e74e24ba48cab25e243605efddcf1ba"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/openat_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/openat_test.py",
+          "git_mode": "100644",
+          "git_blob": "2ed2a0575dd5320495e42aeb849e3b35cecc2871",
+          "bytes": 489,
+          "sha256": "fd47de786d8bdd6914e050662ddc56b744e14bd229fc9ea66bf5ff4b0e4a3da7"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/pipe.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/pipe.c",
+          "git_mode": "100644",
+          "git_blob": "b82a3ca67e8f65d877fd46052376a14b6a71650e",
+          "bytes": 735,
+          "sha256": "ffe033712834cca92ae7ce0a896d24e689e8e48916b4e6f80564431f8b1689e9"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/pipe_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/pipe_test.py",
+          "git_mode": "100644",
+          "git_blob": "4088bbd12f844ab898bb097f2da7173c21f4b679",
+          "bytes": 653,
+          "sha256": "2782d74d4251ac6decf8544697652e63c495bc76bbb5580d592a0398a88b7178"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/read.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/read.c",
+          "git_mode": "100644",
+          "git_blob": "6547e99cb9cda17a470ef71257c6c92ce16fa4e4",
+          "bytes": 311,
+          "sha256": "e09fc7f10807c979de3d06aeedd65f60471b7860b0deaf0a7026aaad7c08b15f"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/read_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/read_test.py",
+          "git_mode": "100644",
+          "git_blob": "84892f4ae9000ce3170810422c344ed3a4705510",
+          "bytes": 323,
+          "sha256": "6693ddd815cb1ba5b023206806178d35a98068dc73f591db2179de07bd4d91d5"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/run-all.sh",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/run-all.sh",
+          "git_mode": "100644",
+          "git_blob": "d1014bdbb7210100f8b2037126cc069a1a0a940c",
+          "bytes": 274,
+          "sha256": "d43eeb820b50ecb9f00e9ad7378213c87b79309aea805515ae1645f1b6c01b2f"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/sleep.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/sleep.c",
+          "git_mode": "100644",
+          "git_blob": "8a1175ce5f2d40fa92173ed8d40faf28b04f2409",
+          "bytes": 508,
+          "sha256": "ab920af65efbd6880f8ac83024752b84fce5abad119f0c487ec68112140cee55"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/sleep_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/sleep_test.py",
+          "git_mode": "100644",
+          "git_blob": "b06f54ab5e12c2e569e80241720c9c269bfb8cb6",
+          "bytes": 251,
+          "sha256": "59e35a8d95e7453fcdc976908b78c8091d36f6d7cd50ff1a35c8812a551e8eb3"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/ssh_run.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/ssh_run.py",
+          "git_mode": "100644",
+          "git_blob": "a779db32dfae128ca324e5a8dd73b70f9279b629",
+          "bytes": 4879,
+          "sha256": "7bee3ea0d34f08bccaaba64983480d27242d38022b48112d9655dc309963ae7e"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/test_base.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/test_base.py",
+          "git_mode": "100644",
+          "git_blob": "7681942ad5bf92f7012c1d79e722e0ef004ede02",
+          "bytes": 1756,
+          "sha256": "c05d04f03889be00afa720c29fc46b909129ceebf7ac9560470638d25a8e9c5f"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/test_echo.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/test_echo.c",
+          "git_mode": "100644",
+          "git_blob": "0a71ff91f8053a9a2cb7deedfebf4b99f8b5726d",
+          "bytes": 168,
+          "sha256": "cde377b72dbb1828e681a4e485f95123193ca757173fcf4912f07d4b443ba809"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/test_runner.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/test_runner.py",
+          "git_mode": "100644",
+          "git_blob": "3a422ab028ced4aa01d064c7af9e025ecfa154df",
+          "bytes": 1685,
+          "sha256": "56371217f170704e8d097d52de9153edd923271d78a045e4a7c54cf56f60912a"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/text.txt",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/text.txt",
+          "git_mode": "100644",
+          "git_blob": "2dba0f99319bde2dd8432b35bf401f3a612d0c2e",
+          "bytes": 52,
+          "sha256": "e1b4f9cb4864be469706f8ceb7b4a5e46b579e691da532fa702d35655df11ce8"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/times.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/times.c",
+          "git_mode": "100644",
+          "git_blob": "4437277c9b6a423d4973e85b769c3bb33a433cf5",
+          "bytes": 516,
+          "sha256": "eadd0616ef71eac9ab187bcb9d5c621c9c8907baa50cfacc56b7dbe920590e0c"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/times_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/times_test.py",
+          "git_mode": "100644",
+          "git_blob": "f8fa9742af5f1b0b251f778ceece01256aa995c2",
+          "bytes": 545,
+          "sha256": "23975c169a8aa5931fb0aeb067711962e937015c6dad6c91da8318f871332999"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/umount.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/umount.c",
+          "git_mode": "100644",
+          "git_blob": "4a20e9d04436976585c6be2ee83139abed6326e4",
+          "bytes": 708,
+          "sha256": "86ac82fd5ea1b1b6b3ff6cf4c51e2c2c499cb5c7ef118a3a78df0f1ad79a7397"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/umount_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/umount_test.py",
+          "git_mode": "100644",
+          "git_blob": "9f3f17bed62016d9c2bcf76c2fee05408d06eb37",
+          "bytes": 534,
+          "sha256": "a792cfadaf05571b26cff2d3b737995bbfed69d56096c5744819fb557c0ace57"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/uname.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/uname.c",
+          "git_mode": "100644",
+          "git_blob": "4de122aec2f0168db0f989df722d93aec760545b",
+          "bytes": 523,
+          "sha256": "39298677a14cf2e9735354d3bfbf209817b0df91beb175731f7ae94ad96d8c2b"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/uname_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/uname_test.py",
+          "git_mode": "100644",
+          "git_blob": "ac1596d265cccc51174ab29518f20d2d0ad09704",
+          "bytes": 239,
+          "sha256": "b8f249562e2206025eefcfc2cafea997339e2c73ac7c75f595cb674bbbdbfce6"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/unlink.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/unlink.c",
+          "git_mode": "100644",
+          "git_blob": "d480e9acbda079d933dddbd492db21cdcd4658df",
+          "bytes": 780,
+          "sha256": "05e8bc6cfcbbc73f14f260e489ad3e1e76059750def087c31c2a6b77082cf0be"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/unlink_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/unlink_test.py",
+          "git_mode": "100644",
+          "git_blob": "920caf936f441c3e40c9ac2998c1aede9293ff4f",
+          "bytes": 266,
+          "sha256": "1e0a7c6bf2e1dbcc9cbee44f55e010e5bb852c28a323f737fb3c57e9f1711dac"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/wait.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/wait.c",
+          "git_mode": "100644",
+          "git_blob": "c3c7c95a409eb8da5c242bea0c8c2f4bc147ccc3",
+          "bytes": 483,
+          "sha256": "b45ea34acf7f3b0cd418c10be7ac6c2c5aa72907cdba33e2dfa716a8ddc5cd76"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/wait_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/wait_test.py",
+          "git_mode": "100644",
+          "git_blob": "aef425a1fce2cb6cfef8d5906ff5ee77974614af",
+          "bytes": 363,
+          "sha256": "fe6422fbfe16601c8710d99f5f4a4a1dd77377ca08c098c16178805aa3736ba6"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/waitpid.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/waitpid.c",
+          "git_mode": "100644",
+          "git_blob": "dfed5b6ce434e5db4b14112e624b6f7c50c8746e",
+          "bytes": 610,
+          "sha256": "a50d02b8c662c4d6fb9711a8529f431b79e9673801e43c7c625b9299a09be999"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/waitpid_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/waitpid_test.py",
+          "git_mode": "100644",
+          "git_blob": "07eddd38c6f47aa6a472c92b7481d1d86a4a3b6e",
+          "bytes": 369,
+          "sha256": "9abdf9241f5f8d2dc2b632197076c607c27b901bdaee015f4344f4df45acbead"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/write.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/write.c",
+          "git_mode": "100644",
+          "git_blob": "d6e2820039aa52a7534f619ee34c7cb68f479aa0",
+          "bytes": 324,
+          "sha256": "38c7ba171fc15d1ee863fc3f133dea951acd9dfa61a4c290b3a52f16e0ef65b4"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/write_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/write_test.py",
+          "git_mode": "100644",
+          "git_blob": "290ae0d740f17b4dbafe19fc0f572d8d7e1d89d0",
+          "bytes": 268,
+          "sha256": "799855adb4493de54659ddb5d739b20cb5445ec7687001ff8dec35aaa26ee953"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/yield.c",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/yield.c",
+          "git_mode": "100644",
+          "git_blob": "45d3a6db5e9c86edaf2da9398dc3f2b6ab25e3c7",
+          "bytes": 502,
+          "sha256": "f97898185b53d60ae9a999b8493b234c5c8109ed3f5072a00995d986a1d50553"
+        },
+        {
+          "upstream_path": "basic/user/src/oscomp/yield_test.py",
+          "path": "tests/upstream/pre-2025/basic/user/src/oscomp/yield_test.py",
+          "git_mode": "100644",
+          "git_blob": "6aba96144dd54bbfb72ade8b920cc02d2f4bcba4",
+          "bytes": 807,
+          "sha256": "d7d505c276dc5a71287af167622015c349330439165577eb9af31c2a69a11283"
+        },
+        {
+          "upstream_path": "oscomp_syscalls.md",
+          "path": "tests/upstream/pre-2025/oscomp_syscalls.md",
+          "git_mode": "100644",
+          "git_blob": "fbf25de364a149b4457014c978aa18ae70af21f3",
+          "bytes": 12462,
+          "sha256": "20a5551553beef910f7858653ac979a8febb317df3026ecf93aa5ff6230793b0"
+        },
+        {
+          "upstream_path": "scripts/basic/basic_testcode.sh",
+          "path": "tests/upstream/pre-2025/scripts/basic/basic_testcode.sh",
+          "git_mode": "100755",
+          "git_blob": "88807456dd0032cca7808d34484845bf88aeb4ba",
+          "bytes": 144,
+          "sha256": "2b25b7f1c245ebe210100ae5815a7ddc1ae322801a605db2443e399343843d5a"
+        }
+      ]
+    },
+    {
+      "id": "tests-final-2026",
+      "repository": "https://github.com/oscomp/testsuits-for-oskernel.git",
+      "ref": "final-2026",
+      "commit": "b5ec6ef8497e1818cbdec3b54bb722f036e57972",
+      "selection": [
+        "README.md",
+        "cagent-test",
+        "scripts",
+        "judge"
+      ],
+      "files": [
+        {
+          "upstream_path": "README.md",
+          "path": "tests/upstream/final-2026/README.md",
+          "git_mode": "100644",
+          "git_blob": "3c2f1a2cf67f4d31b7cf173ccbcf8722111bb35c",
+          "bytes": 9077,
+          "sha256": "20eb5abc1e23ebed2cef18c5ca0265ee59be2741b44127e6ecc35500e02eb947"
+        },
+        {
+          "upstream_path": "cagent-test/Makefile",
+          "path": "tests/upstream/final-2026/cagent-test/Makefile",
+          "git_mode": "100644",
+          "git_blob": "a701e609bcdeec042281d0f580733a7c46c2f6da",
+          "bytes": 321,
+          "sha256": "c658821bfc24f82b3b8c313c654e087ade58428ad12bf16fe1219dca1e22bb77"
+        },
+        {
+          "upstream_path": "cagent-test/agent_lite.c",
+          "path": "tests/upstream/final-2026/cagent-test/agent_lite.c",
+          "git_mode": "100644",
+          "git_blob": "6ab6e376e789758a2f91963c7c831480ad14c80e",
+          "bytes": 19890,
+          "sha256": "a0129ac06d6c02ae238f440635c477edeac64df16f0005ef6f049dd6320b5cf7"
+        },
+        {
+          "upstream_path": "cagent-test/simple_llm_server.c",
+          "path": "tests/upstream/final-2026/cagent-test/simple_llm_server.c",
+          "git_mode": "100644",
+          "git_blob": "79eb6bb53970e3236c00a96f62f6a64951b37425",
+          "bytes": 17944,
+          "sha256": "dcff30fa281c6b15dc5961ab3a8b21a04f7668ef931bbf24d4a9ef927d308af4"
+        },
+        {
+          "upstream_path": "cagent-test/third_party/cJSON/cJSON.c",
+          "path": "tests/upstream/final-2026/cagent-test/third_party/cJSON/cJSON.c",
+          "git_mode": "100644",
+          "git_blob": "61483d903c6e77c2e66446532947bad555433de3",
+          "bytes": 78800,
+          "sha256": "75c51de8fa40ac9d7a99319c6330719bd692eb81c0a869265f3d4c682533f9b9"
+        },
+        {
+          "upstream_path": "cagent-test/third_party/cJSON/cJSON.h",
+          "path": "tests/upstream/final-2026/cagent-test/third_party/cJSON/cJSON.h",
+          "git_mode": "100644",
+          "git_blob": "e00d93fbd8c5a04467135588df3c881e72566bb3",
+          "bytes": 16192,
+          "sha256": "75c77675cb586dc1af8e34253c7e0a23dcd7a7c6d25415f2387273a00dc3570d"
+        },
+        {
+          "upstream_path": "judge/judge_buildstorm-glibc.py",
+          "path": "tests/upstream/final-2026/judge/judge_buildstorm-glibc.py",
+          "git_mode": "100644",
+          "git_blob": "55e37fdc52e8a8233f3ed9862c890e0652f4e59b",
+          "bytes": 4617,
+          "sha256": "f9bc3c5c640217947775759b5b02aa4ceedfa76728d25d4f06d94ef5bc9d64dd"
+        },
+        {
+          "upstream_path": "judge/judge_cagent-glibc.py",
+          "path": "tests/upstream/final-2026/judge/judge_cagent-glibc.py",
+          "git_mode": "100755",
+          "git_blob": "15b6db26029d608ff55561147b64cf3c20fab51f",
+          "bytes": 1691,
+          "sha256": "86b7460b2b24aa8b50cbaefb39e8cd1f677b6e9e5fcc7ed798151c191e35a74c"
+        },
+        {
+          "upstream_path": "scripts/buildstorm_testcode.sh",
+          "path": "tests/upstream/final-2026/scripts/buildstorm_testcode.sh",
+          "git_mode": "100755",
+          "git_blob": "71002c88863ab39c30baa050fe809630410ab05e",
+          "bytes": 3138,
+          "sha256": "2f656a668076803fb465409374b6bcbb1fcbbc4f5c17a72b8ea4695668b9b33e"
+        },
+        {
+          "upstream_path": "scripts/cagent_testcode.sh",
+          "path": "tests/upstream/final-2026/scripts/cagent_testcode.sh",
+          "git_mode": "100755",
+          "git_blob": "7a1bc59958673048d8882c7ee9a58c8ef4440f53",
+          "bytes": 3274,
+          "sha256": "4be062a417119d9a2bc630e8eec782998aed37978644d4302a982641db117074"
+        }
+      ]
+    },
+    {
+      "id": "environment-reference",
+      "repository": "https://gitlab.educg.net/wangmingjian/os-contest-2024-image.git",
+      "ref": "master",
+      "commit": "aa2122f118f9d50e6c378000bd2a102915c8b87c",
+      "selection": [
+        "Dockerfile"
+      ],
+      "files": [
+        {
+          "upstream_path": "Dockerfile",
+          "path": "tools/environment/reference/Dockerfile.upstream",
+          "git_mode": "100644",
+          "git_blob": "30d15ab0da9a18fc866f3aa35887d00e0b2b89d9",
+          "bytes": 10271,
+          "sha256": "3c9b27a47d56e88b79cc1cf924a4b7f967a91c039d44596feed33239ccf01379"
+        }
+      ]
+    }
+  ]
+}

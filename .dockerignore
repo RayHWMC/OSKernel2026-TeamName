@@ -1,0 +1,8 @@
+.git
+target
+build
+artifacts
+kernel-rv
+kernel-la
+*.img
+*.img.*

@@ -1,0 +1,21 @@
+# Local build outputs
+target/
+build/
+**/__pycache__/
+*.py[cod]
+/kernel-rv
+/kernel-la
+/disk*.img
+/sdcard*.img*
+/artifacts/logs/*
+!/artifacts/logs/README.md
+/artifacts/results/*
+!/artifacts/results/README.md
+
+# Editors and local environment
+.vscode/
+.idea/
+.env
+.env.*
+*.swp
+*.tmp
