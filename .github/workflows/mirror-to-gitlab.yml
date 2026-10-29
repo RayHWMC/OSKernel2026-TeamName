@@ -24,7 +24,7 @@ jobs:
       - name: Push refs to GitLab
         env:
           GITLAB_MIRROR_USERNAME: oauth2
-          GITLAB_MIRROR_TOKEN: ${{ secrets.GITLAB_KERNEL }}
+          GITLAB_MIRROR_TOKEN: ${{ secrets.GITLAB_MIRROR }}
         run: |
           cat > "$RUNNER_TEMP/gitlab-askpass.sh" <<'ASKPASS'
           #!/bin/sh
